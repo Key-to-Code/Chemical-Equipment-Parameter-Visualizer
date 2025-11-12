@@ -230,7 +230,7 @@ The application uses SQLite for data storage. The database automatically stores:
 - Admin panel is available at `/admin/`
 
 ### Web Frontend
-- Vite dev server runs on port 5000 (required for Replit)
+- Vite dev server runs on port 5000
 - API calls are configured to work with both localhost and deployed environments
 - Responsive design with modern CSS
 - Chart.js for interactive visualizations
@@ -253,7 +253,7 @@ sample_data/sample_equipment_data.csv
 ## Deployment
 
 ### Web Application
-The web application can be deployed using Replit's deployment feature. The frontend is already configured to run on port 5000 and accepts requests from all hosts.
+The frontend is already configured to run on port 5000 and accepts requests from all hosts.
 
 ### Backend API
 The Django backend should be deployed separately. Update the `API_BASE_URL` in the frontend code to point to your deployed backend.
