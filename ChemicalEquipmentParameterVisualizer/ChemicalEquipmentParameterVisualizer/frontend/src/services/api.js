@@ -1,0 +1,53 @@
+import axios from 'axios';
+
+const API_BASE_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:8000/api'
+  : `https://${window.location.hostname.replace(/^[^-]+-[^-]+/, 'backend-8000')}/api`;
+
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+export const uploadCSV = async (file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  const response = await api.post('/upload/', formData, {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+  });
+  return response.data;
+};
+
+export const getDatasets = async () => {
+  const response = await api.get('/datasets/');
+  return response.data;
+};
+
+export const getDatasetDetail = async (id) => {
+  const response = await api.get(`/datasets/${id}/`);
+  return response.data;
+};
+
+export const getDatasetSummary = async (id) => {
+  const response = await api.get(`/datasets/${id}/summary/`);
+  return response.data;
+};
+
+export const downloadPDF = async (id, filename) => {
+  const response = await api.get(`/datasets/${id}/generate_pdf/`, {
+    responseType: 'blob',
+  });
+  const url = window.URL.createObjectURL(new Blob([response.data]));
+  const link = document.createElement('a');
+  link.href = url;
+  link.setAttribute('download', filename || 'report.pdf');
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+};
+
+export default api;

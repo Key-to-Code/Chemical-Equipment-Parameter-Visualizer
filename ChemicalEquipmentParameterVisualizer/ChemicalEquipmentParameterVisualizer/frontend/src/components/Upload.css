@@ -1,0 +1,111 @@
+.upload-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.upload-container h2 {
+  margin-top: 0;
+  color: #1a1a2e;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.upload-box input[type="file"] {
+  padding: 1rem;
+  border: 2px dashed #1e90ff;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #f8f9fa;
+  color: #495057;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.upload-box input[type="file"]:hover {
+  border-color: #000000;
+  background: #f1f3f5;
+}
+
+.upload-box button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #1e90ff 0%, #000000 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+.upload-box button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.4);
+}
+
+.upload-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.success-message {
+  color: #28a745;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  background: #d4edda;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  background: #f8d7da;
+  border-radius: 8px;
+  border-left: 4px solid #dc3545;
+}
+
+.upload-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+}
+
+.upload-info h3 {
+  margin-top: 0;
+  color: #495057;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.upload-info pre {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  line-height: 1.6;
+}
