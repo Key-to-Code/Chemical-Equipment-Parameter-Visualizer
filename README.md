@@ -26,7 +26,7 @@ Both the web and desktop applications consume the same Django REST API, ensuring
 
 
 ## Video
-<video src="Chemical_Equipment_Parameter_Visualizer.mp4" controls muted autoplay loop width="600"></video>
+
 
 
 ## Features
