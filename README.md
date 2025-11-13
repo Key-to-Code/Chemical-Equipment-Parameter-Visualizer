@@ -13,6 +13,25 @@ This project demonstrates a full-stack hybrid architecture:
 
 Both the web and desktop applications consume the same Django REST API, ensuring consistent functionality across platforms.
 
+## Screenshots
+
+![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_01" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
+)
+![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_02" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
+)
+![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_03" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
+)
+![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_04" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
+)
+![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_05" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
+)
+![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_06" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
+)
+
+## Video
+<video src="Chemical_Equipment_Parameter_Visualizer.mp4" controls muted autoplay loop width="600"></video>
+
+
 ## Features
 
  **CSV File Upload** - Upload equipment data via web or desktop interface  
