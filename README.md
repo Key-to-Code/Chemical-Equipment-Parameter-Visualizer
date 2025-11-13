@@ -116,9 +116,10 @@ python manage.py migrate
 4. (Optional) Create a superuser for admin panel access:
 ```bash
 python manage.py createsuperuser
+```
 # Follow the prompts to create a secure username and password
 # Note: The API is publicly accessible for this demo - authentication is only needed for the Django admin panel
-```
+
 
 5. Start the Django development server:
 ```bash
