@@ -27,7 +27,7 @@ Both the web and desktop applications consume the same Django REST API, ensuring
 
 ## Video
 
-https://github.com/Key-to-Code/Chemical-Equipment-Parameter-Visualizer/blob/main/images/Chemical_Equipment_Parameter_Visualizer.mp4
+https://youtu.be/C4SmaDAyJXg
 
 ## Features
 
