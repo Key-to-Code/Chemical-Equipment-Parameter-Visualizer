@@ -15,18 +15,15 @@ Both the web and desktop applications consume the same Django REST API, ensuring
 
 ## Screenshots
 
-![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_01" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
-)
-![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_02" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
-)
-![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_03" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
-)
-![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_04" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
-)
-![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_05" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
-)
-![](<img width="1905" height="983" alt="ChemicalEquipmentParameterVisualizer_06" src="https://github.com/user-attachments/assets/74084836-8f05-4691-b21d-68cd00dffd72" />
-)
+## Screenshots
+
+![ChemicalEquipmentParameterVisualizer_01](images/ChemicalEquipmentParameterVisualizer_01.png)
+![ChemicalEquipmentParameterVisualizer_02](images/ChemicalEquipmentParameterVisualizer_02.png)
+![ChemicalEquipmentParameterVisualizer_03](images/ChemicalEquipmentParameterVisualizer_03.png)
+![ChemicalEquipmentParameterVisualizer_04](images/ChemicalEquipmentParameterVisualizer_04.png)
+![ChemicalEquipmentParameterVisualizer_05](images/ChemicalEquipmentParameterVisualizer_05.png)
+![ChemicalEquipmentParameterVisualizer_06](images/ChemicalEquipmentParameterVisualizer_06.png)
+
 
 ## Video
 <video src="Chemical_Equipment_Parameter_Visualizer.mp4" controls muted autoplay loop width="600"></video>
