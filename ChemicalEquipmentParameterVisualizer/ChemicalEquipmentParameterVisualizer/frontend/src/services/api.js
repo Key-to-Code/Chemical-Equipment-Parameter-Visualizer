@@ -1,15 +1,51 @@
 import axios from 'axios';
 
-const API_BASE_URL = window.location.hostname === 'localhost' 
-  ? 'http://localhost:8000/api'
-  : `https://${window.location.hostname.replace(/^[^-]+-[^-]+/, 'backend-8000')}/api`;
+// Use environment variable for API URL configuration
+// Falls back to localhost:8000 for local development if not set
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 30000, // 30 second timeout for requests
 });
+
+// Request interceptor for debugging and adding common headers
+api.interceptors.request.use(
+  (config) => {
+    // Log requests in development mode
+    if (import.meta.env.DEV) {
+      console.log(`[API] ${config.method?.toUpperCase()} ${config.url}`);
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+// Response interceptor for consistent error handling
+api.interceptors.response.use(
+  (response) => {
+    return response;
+  },
+  (error) => {
+    // Create a consistent error format
+    const errorMessage = error.response?.data?.error 
+      || error.response?.data?.message 
+      || error.message 
+      || 'An unexpected error occurred';
+    
+    // Log errors in development mode
+    if (import.meta.env.DEV) {
+      console.error(`[API Error] ${errorMessage}`, error);
+    }
+    
+    return Promise.reject(error);
+  }
+);
 
 export const uploadCSV = async (file) => {
   const formData = new FormData();

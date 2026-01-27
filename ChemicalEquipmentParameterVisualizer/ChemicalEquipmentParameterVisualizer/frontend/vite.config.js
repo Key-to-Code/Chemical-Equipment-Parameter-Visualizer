@@ -9,4 +9,21 @@ export default defineConfig({
     strictPort: true,
     allowedHosts: true,
   },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173,
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          charts: ['chart.js', 'react-chartjs-2'],
+        },
+      },
+    },
+  },
 })
+
