@@ -1,9 +1,9 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "cd ChemicalEquipmentParameterVisualizer/ChemicalEquipmentParameterVisualizer/backend && pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate --noinput"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "cd ChemicalEquipmentParameterVisualizer/ChemicalEquipmentParameterVisualizer/backend && gunicorn equipment_api.wsgi:application --bind 0.0.0.0:$PORT"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
+
 
