@@ -1,145 +1,139 @@
 .dataset-detail {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
 }
 
 .dataset-detail .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .dataset-detail h2 {
   margin: 0;
-  color: #1a1a2e;
-  font-size: 2rem;
-  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .pdf-button {
-  padding: 0.875rem 1.75rem;
-  background: linear-gradient(135deg, #1e90ff 0%, #000000 100%);
-  color: white;
-  border: none;
-  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .pdf-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.4);
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 .summary-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .summary-cards .card {
-  background: linear-gradient(135deg, #1e90ff 0%, #000000 100%);
-  color: white;
-  padding: 1.75rem;
-  border-radius: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  padding: 1.25rem;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(30, 144, 255, 0.3);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .summary-cards .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(30, 144, 255, 0.4);
+  border-color: var(--accent-primary);
 }
 
 .summary-cards .card h3 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 0.5rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
 }
 
 .summary-cards .card .big-number {
   margin: 0;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
 }
 
 .charts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .chart-container {
-  background: #f8f9fa;
-  padding: 2rem;
-  border-radius: 16px;
-  border: 1px solid #e9ecef;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
 }
 
 .chart-container h3 {
   margin-top: 0;
-  color: #1a1a2e;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .equipment-table {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .equipment-table h3 {
-  color: #1a1a2e;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 .equipment-table table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: white;
-  border-radius: 12px;
+  border-collapse: collapse;
+  background: var(--bg-secondary);
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .equipment-table th,
 .equipment-table td {
-  padding: 1rem 1.25rem;
+  padding: 0.875rem 1rem;
   text-align: left;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .equipment-table th {
-  background: linear-gradient(135deg, #1e90ff 0%, #000000 100%);
-  color: white;
-  font-weight: 600;
-  font-size: 0.95rem;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .equipment-table td {
-  color: #495057;
-  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-size: 0.9rem;
 }
 
 .equipment-table tr:last-child td {
@@ -147,7 +141,7 @@
 }
 
 .equipment-table tbody tr:hover {
-  background: #f8f9fa;
+  background: var(--bg-hover);
 }
 
 @media (max-width: 1024px) {
@@ -158,18 +152,18 @@
 
 @media (max-width: 768px) {
   .dataset-detail {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
-  
+
   .dataset-detail .header {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .summary-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .equipment-table {
     overflow-x: auto;
   }

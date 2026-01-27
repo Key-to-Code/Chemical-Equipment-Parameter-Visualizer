@@ -42,7 +42,9 @@ function DatasetDetail() {
       {
         label: 'Average Values',
         data: [dataset.avg_flowrate, dataset.avg_pressure, dataset.avg_temperature],
-        backgroundColor: ['rgba(54, 162, 235, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(255, 206, 86, 0.6)'],
+        backgroundColor: ['rgba(212, 168, 67, 0.7)', 'rgba(184, 146, 47, 0.7)', 'rgba(160, 130, 50, 0.7)'],
+        borderColor: ['#d4a843', '#b8922f', '#a08232'],
+        borderWidth: 1,
       },
     ],
   };
@@ -54,12 +56,14 @@ function DatasetDetail() {
         label: 'Equipment Count by Type',
         data: Object.values(dataset.type_distribution),
         backgroundColor: [
-          'rgba(255, 99, 132, 0.6)',
-          'rgba(54, 162, 235, 0.6)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(75, 192, 192, 0.6)',
-          'rgba(153, 102, 255, 0.6)',
+          'rgba(212, 168, 67, 0.75)',
+          'rgba(160, 160, 165, 0.6)',
+          'rgba(180, 150, 60, 0.65)',
+          'rgba(120, 120, 125, 0.55)',
+          'rgba(200, 170, 80, 0.6)',
         ],
+        borderColor: '#1c1c1f',
+        borderWidth: 2,
       },
     ],
   };
@@ -70,7 +74,7 @@ function DatasetDetail() {
         <h2>{dataset.name}</h2>
         <button onClick={handleDownloadPDF} className="pdf-button">Download PDF Report</button>
       </div>
-      
+
       <div className="summary-cards">
         <div className="card">
           <h3>Total Equipment</h3>
