@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-// Use environment variable for API URL configuration
-// Falls back to localhost:8000 for local development if not set
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const api = axios.create({
@@ -9,13 +7,11 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 30000, // 30 second timeout for requests
+  timeout: 30000,
 });
 
-// Request interceptor for debugging and adding common headers
 api.interceptors.request.use(
   (config) => {
-    // Log requests in development mode
     if (import.meta.env.DEV) {
       console.log(`[API] ${config.method?.toUpperCase()} ${config.url}`);
     }
@@ -26,23 +22,20 @@ api.interceptors.request.use(
   }
 );
 
-// Response interceptor for consistent error handling
 api.interceptors.response.use(
   (response) => {
     return response;
   },
   (error) => {
-    // Create a consistent error format
-    const errorMessage = error.response?.data?.error 
-      || error.response?.data?.message 
-      || error.message 
+    const errorMessage = error.response?.data?.error
+      || error.response?.data?.message
+      || error.message
       || 'An unexpected error occurred';
-    
-    // Log errors in development mode
+
     if (import.meta.env.DEV) {
       console.error(`[API Error] ${errorMessage}`, error);
     }
-    
+
     return Promise.reject(error);
   }
 );

@@ -5,30 +5,28 @@
 }
 
 :root {
-  /* Color Palette - Black & Gold Theme */
   --bg-primary: #0a0a0b;
   --bg-secondary: #111113;
   --bg-card: #161618;
   --bg-hover: #1c1c1f;
-  
+
   --accent-primary: #d4a843;
   --accent-secondary: #b8922f;
   --accent-muted: rgba(212, 168, 67, 0.15);
   --accent-glow: rgba(212, 168, 67, 0.25);
-  
+
   --text-primary: #f0f0f0;
   --text-secondary: #a0a0a5;
   --text-muted: #6b6b70;
-  
+
   --border-subtle: #2a2a2d;
   --border-accent: #3a3a3f;
-  
+
   --success: #4ade80;
   --success-bg: rgba(74, 222, 128, 0.1);
   --error: #f87171;
   --error-bg: rgba(248, 113, 113, 0.1);
-  
-  /* Typography */
+
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
   font-weight: 400;
@@ -52,7 +50,12 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-primary);
   font-weight: 600;
 }
@@ -73,7 +76,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Subtle scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
