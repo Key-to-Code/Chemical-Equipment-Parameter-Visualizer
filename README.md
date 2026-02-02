@@ -25,9 +25,7 @@ Both the web and desktop applications consume the same Django REST API, ensuring
 ![ChemicalEquipmentParameterVisualizer_06](images/ChemicalEquipmentParameterVisualizer_06.png)
 
 
-## Video
 
-https://youtu.be/C4SmaDAyJXg
 
 ## Features
 
