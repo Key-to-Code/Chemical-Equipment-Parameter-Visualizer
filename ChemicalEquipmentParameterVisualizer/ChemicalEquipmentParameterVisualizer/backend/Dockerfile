@@ -19,4 +19,4 @@ COPY . .
 RUN python manage.py collectstatic --noinput
 
 # Run migrations and start server
-CMD python manage.py migrate --noinput && gunicorn equipment_api.wsgi:application --bind 0.0.0.0:$PORT
+CMD ["/bin/sh", "-c", "python manage.py migrate --noinput && gunicorn equipment_api.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
